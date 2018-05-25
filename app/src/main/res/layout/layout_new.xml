@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="600dp"-->
+        <!--android:layout_height="600dp"-->
+        <!--android:src="@drawable/phonecastlogoonly"-->
+        <!--android:layout_alignRight="@+id/new_ll3"-->
+        <!--android:layout_alignEnd="@+id/new_ll3"-->
+        <!--android:layout_alignTop="@+id/new_imageViewbackground"-->
+        <!--android:layout_above="@+id/new_textView3"-->
+        <!--android:layout_marginTop="-90dp" />-->
+    <!-- -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/textured_paper"
+        android:scaleType="centerCrop"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center|bottom"
+        android:background="#37000000"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="28dp"
+            android:src="@drawable/phonecastlogo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/new_ll3"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cut2"
+            android:scaleType="fitXY"
+            android:background="#53878787" />
+
+    </RelativeLayout>
+
+
+
+
+<!--<ImageView-->
+    <!--android:id="@+id/new_imageViewbackground"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/boxpng"-->
+
+    <!--android:layout_alignBottom="@+id/new_ll1"-->
+    <!--android:layout_marginBottom="-90dp" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your number:"
+        android:id="@+id/new_textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/new_editText"
+        android:textColor="#19314b" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/new_editText"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+
+        android:phoneNumber="true"
+        android:textStyle="bold|italic"
+        android:maxLength="10"
+        android:layout_above="@+id/new_ll1"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/new_ll1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/new_textView2"
+        android:weightSum="1">
+        <ImageButton
+            android:layout_width="84dp"
+            android:layout_height="42dp"
+            android:text="Send"
+            android:id="@+id/new_button"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="top"
+            android:background="@drawable/button_shape"
+            android:src="@drawable/button2"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/new_imageView"
+            android:src="@drawable/sync" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Received number:"
+        android:id="@+id/new_textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/new_editText2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+
+        android:textStyle="bold|italic"
+
+        android:maxLength="10"
+        android:layout_below="@+id/new_textView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/new_editText3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/new_editText2" />
+
+    <LinearLayout
+        android:id="@+id/new_ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/new_editText3">
+        <ImageButton
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:text="Save contact"
+            android:id="@+id/new_button2"
+            android:src="@drawable/save"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:background="@drawable/button_shape" />
+
+        <ImageButton
+            android:layout_width="95dp"
+            android:layout_height="46dp"
+            android:text="Clear Number"
+            android:id="@+id/new_button3"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/clear"
+            android:background="@drawable/button_shape" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="5dp">
+
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="28dp"
+            android:src="@drawable/phonecastlogo" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Received number:"
+        android:id="@+id/new_textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/new_textView2" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_sentNumberCheck"
+        android:src="@drawable/sigh_check2"
+        android:layout_alignBottom="@+id/new_editText"
+        android:layout_toRightOf="@+id/new_editText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/new_editText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_receiveNumberCheck"
+        android:src="@drawable/sigh_check2"
+        android:layout_above="@+id/new_editText3"
+        android:layout_alignLeft="@+id/new_sentNumberCheck"
+        android:layout_alignStart="@+id/new_sentNumberCheck"
+        android:layout_alignRight="@+id/new_sentNumberCheck"
+        android:layout_alignEnd="@+id/new_sentNumberCheck"
+        android:layout_alignTop="@+id/new_editText2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your number:"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/editText" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+
+        android:phoneNumber="true"
+        android:textStyle="bold|italic"
+        android:maxLength="10"
+        android:layout_above="@+id/ll1"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView2"
+        android:weightSum="1">
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/button"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="top" />
+
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView"
+        android:src="@drawable/sync" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Received number:"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+
+        android:textStyle="bold|italic"
+
+        android:maxLength="10"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText2" />
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText3">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save contact"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+      />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Number"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="5dp">
+
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="28dp"
+            android:src="@drawable/phonecastlogo" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Received number:"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sentNumberCheck"
+        android:src="@drawable/sigh_check2"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/editText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/receiveNumberCheck"
+        android:src="@drawable/sigh_check2"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/sentNumberCheck"
+        android:layout_alignStart="@+id/sentNumberCheck"
+        android:layout_alignRight="@+id/sentNumberCheck"
+        android:layout_alignEnd="@+id/sentNumberCheck"
+        android:layout_alignTop="@+id/editText2"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
